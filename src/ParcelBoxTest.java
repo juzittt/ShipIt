@@ -37,6 +37,7 @@ class ParcelBoxTest {
         assertTrue(box.getAllParcels().isEmpty());
     }
 
+    // Могу заменить stream().mapToInt на цикл for, но не очень хочется
     @Test
     void addParcel_AddTwoParcelsWithinLimit_SuccessiveAdd() {
         ParcelBox<StandardParcel> box = new ParcelBox<>(10);
